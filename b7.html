@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rwed</title>
+</head>
+<body>
+<script>
+    let arr = [1, 2, 3, 4, 5, 6, 2, 8, 9, 1]
+    let v = 2
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === v) {
+            xoa(i)
+        }
+    }
+
+    function xoa(i) {
+        for (let j=i; j < arr.length - 1; j++) {
+            arr[j] = arr[j + 1]
+        }
+        arr[arr.length - 1] = 0
+    }
+
+    alert(arr)
+</script>
+</body>
+</html>
